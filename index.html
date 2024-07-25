@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="tarefa tarefa-modelo">
+        <input type="checkbox">
+        <p> Nome da Tarefa </p>                    
+       <div>       
+        <button class="bt-padrao bt-excluir-tarefa">
+            <span class="material-symbols-rounded">
+                delete
+            </span>
+        </button>
+       </div>
+    </div>
+
+        <header>
+            <h1> To-do List</h1>
+        </header>
+
+        <main>
+            <div class="form-adicionar-tarefa">
+                <p>Adicionar Tarefa</p>
+                <form name="salvar-tarefa">
+                    <input name="nome-tarefa" type="text">
+                    <button id="bt-adicionar" class="bt-padrao bt-adicionar">
+                        <span class="material-symbols-rounded">
+                            add
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="tarefas">
+
+
+            </div> <!--Fim tarefas-->
+
+            <div class="fechamento-tarefas">
+                <p class="qtd-tarefas">
+                    <span> 0 </span> Tarefas
+                </p>
+                <p class="qtd-tarefas-conluidas">
+                    <span>0 </span> concluidas
+                </p>
+                <p class="qtd-tarefas-pendentes">
+                    <span>0 </span> pendentes
+                </p>
+            </div>
+
+
+        </main>
+
+    </div>
+
+<script src="./assets/script.js"></script>
+</body>
+</html>

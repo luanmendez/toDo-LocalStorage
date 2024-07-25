@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+body{
+    background-color: #506ee5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 14px;
+}
+
+header{
+    color: aliceblue;
+    margin: 30px 0;   
+
+}
+
+.form-adicionar-tarefa{
+    background-color: #FFF;
+    width: 400px;
+    height: 120px;
+    padding: 20px;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 10px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+
+
+.form-adicionar-tarefa p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+[name=salvar-tarefa]{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+[name=nome-tarefa]{
+    width: 320px;
+    height: 30px;
+    border: 1px solid #b3d5f5;
+    padding: 5px;
+}
+
+.bt-padrao{
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+}
+
+.bt-padrao span{
+    font-size: 20px;
+}
+
+.bt-adicionar:hover{
+    width: 30px;
+    height: 30px;
+    background-color: #b3d5f5;
+    border-radius: 50px;
+}
+
+
+.bt-adicionar span{
+    font-size: 30px;
+    color:#506ee5
+}
+
+.bt-excluir-tarefa span{
+    color: #da3754
+}
+
+.bt-edit-tarefa span{
+    color: #74A57F;
+}
+
+.tarefa{
+    background-color: #FFF;
+    padding: 20px;
+    height: 60px;
+    border-bottom: 1px solid #edeff2;
+    border-top: 1px solid #edeff2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarefa:hover{
+    background-color: #b3d5f5;
+}
+
+.tarefa-modelo{
+    display: none;
+}
+
+.fechamento-tarefas{
+    height: 60px;
+    padding: 10px 30px;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+
+}
+
+.fechamento-tarefas p{
+    font-size: 12px;
+}
+.tarefa-conluida{
+    text-decoration: line-through !important;
+}
